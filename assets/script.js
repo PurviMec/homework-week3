@@ -18,24 +18,40 @@ var onClick = function () {
         }
         
         }
+
         if (promptPassword === "yes"){
             var passwordConditions = window.prompt("Please choose password between 8 to 128 characters. It must have ,one special character', 'one capital-character' and 'one numeric character");
         }
-        if (promptPassword.length<8) {
+
+        if (promptPassword.value==" ||textLength<8 || textLength>128") {
             window.alert("Please take another look at Password-Requirements");
-          
+            return false;
+        
         }
-        if (promptPassword.search(/[0-9]/)==-1){
+        if (promptPassword.search(/[0-9]/)==-1) {
             window.alert("Please write password which has atleast one Numeric Character");
-           
+            return false;
         }
+
+
         if (promptPassword.search(/[A-Z]/)==-1) {
             window.alert("Please include atleast one Upper Case Character in your password.");
-          
+            return false;
         }
-        if (promptPassword.search(/[!@#$%^&*]/)==-1) {
+
+       if (promptPassword.search(/[!@#$%^&*]/)==-1) {
             window.alert("Please include atleast one Special Character in your password.");
+            return false;
         }
+        
+        else {
+          window.alert("Congratulations! You've set your password!");
+          
+        
+      }
+        return false;
+
+        
 };
 
 
