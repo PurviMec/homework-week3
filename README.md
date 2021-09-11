@@ -9,7 +9,7 @@ To create more secure and unique password.
 * JS
 
 ## Website
-
+https://purvimec.github.io/homework-week3/
 
 ## GitHub
 
