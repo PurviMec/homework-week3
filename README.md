@@ -12,7 +12,7 @@ To create more secure and unique password.
 https://purvimec.github.io/homework-week3/
 
 ## GitHub
-
+https://github.com/PurviMec/homework-week3.git
 
 ## Screen-shot
 
