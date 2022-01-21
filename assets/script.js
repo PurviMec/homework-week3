@@ -48,6 +48,14 @@ var onClick = function () {
   }
   }
   document.getElementById("password").innerHTML = resultPass;
+}
+
+function copyPass(){
+
+  document.querySelector("textarea").select();
+  document.execCommand("Copy");
+  alert("Password copied to clipboard!");
+}
   // Alert users about password requirements
 //   var promptPassword = window.prompt("Please input nubers to adjust your password length!.");
   
@@ -87,15 +95,6 @@ var onClick = function () {
           
 //       }
 // };
-
-
-  
-
-
-  
-
-
-    
     
 //     //give user option to leave if they want
 
@@ -111,13 +110,5 @@ var onClick = function () {
 
 //   passwordText.value = password;
 
-}
-
-function copyPass(){
-
-  document.querySelector("textarea").select();
-  document.execCommand("Copy");
-  alert("Password copied to clipboard!");
-}
 
 // Add event listener to generate button
