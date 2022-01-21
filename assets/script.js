@@ -1,5 +1,22 @@
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var upArray = upperCase.split("");
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var lowArray = lowerCase.split(" ");
+var num = "0123456789";
+var numArr = num.split("");
+var sym = "!#$%&\()*+,-./:;<=>?@^[\\]^_`{|}~";
+var symArr = sym.split("");
+
 // Assignment code here
 var onClick = function () {
+  var allCharacters = [];
+  var result = "";
+
+  var length = prompt("Please input nubers to adjust your password length!");
+
+  if(length < 8 || length > 128 ) {
+      alert("Your password should have min length of 8 and max length of 128");
+  }
   // Alert users about password requirements
   var promptPassword = window.prompt("Please follow the Instructions to generate valid and secure password. Please answer 'yes' or 'no' to continue process for secure and valid password.");
   
