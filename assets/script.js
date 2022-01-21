@@ -7,10 +7,11 @@ var numArr = num.split("");
 var sym = "!#$%&\()*+,-./:;<=>?@^[\\]^_`{|}~";
 var symArr = sym.split("");
 
+window.onload = alert('Welcome to password generator!');
 // Assignment code here
 var onClick = function () {
   var allCharacters = [];
-  var result = "";
+  var resultPass = "";
 
   var length = prompt("Please input nubers to adjust your password length!");
 
@@ -35,14 +36,14 @@ var onClick = function () {
         Array.prototype.push.apply(allCharacters, symArr);
     }
 
-    if(allCharacters.length===0){
+    if(allCharacters.length === 0){
         alert("You must select at lease 1 special character to generate a password and Please start over.");
     }
 
     else{
       for(var i=0; i < length; i++){
-          var randomPass = Math.floor(Math.random()*allCharacters.length);
-          result += allChars[randomPass];
+          var randomPass = Math.floor(Math.random() * allCharacters.length);
+          resultPass += allCharacters[randomPass];
       }
   }
   }
